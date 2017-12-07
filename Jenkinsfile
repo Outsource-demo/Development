@@ -1,3 +1,8 @@
+properties([
+    [$class: 'GithubProjectProperty',
+    displayName: '',
+    projectUrlStr: 'https://github.com/Outsource-demo/Development.git'],
+    pipelineTriggers([githubPush()])])
 pipeline {
     agent any
     stages {
